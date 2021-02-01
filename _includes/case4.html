@@ -1,0 +1,119 @@
+<div class="card px-5 d-flex flex-column justify-content-between align-items-start">
+    <h3 class="title-underline" id="underline-1">AI based Optimization for Equipment Maintenance Scheduling</h3>
+    <div class="case-img">
+        <img src="{{site.baseurl}}/assets/img/case4/1.jpg" width="500" height="300" alt="">
+    </div>
+    <h4>Challenge</h4>
+    <p>
+        Industrial Internet has given rise to availability of sensor
+        data from numerous machines belonging to various domains
+        such as agriculture, energy, manufacturing etc. These sensor
+        readings can indicate health of the machines. This has led
+        to increased business desire to perform maintenance of these
+        machines based on their condition rather than following the
+        current industry practice of time-based maintenance. It has
+        also been shown that condition-based maintenance can lead
+        to signicant nancial savings. Such goals can be achieved
+        by building models for prediction of remaining useful life
+        (RUL) of the machines, based on their sensor readings.
+    </p>
+    <p>Below are some of the milestones for creating an on-demand or condition based maintenance strategy:</p>
+    <ul>
+        <li>
+            <p>Provide optimal windows for operational duration.</p>
+        </li>
+        <li>
+            <p>Provide novel operational insights for equipment.</p>
+        </li>
+        <li>
+            <p>Proactively identify potential failure modes and time to failure before planned maintenance windows.</p>
+        </li>
+        <li>
+            <p>Improve decision-making by increasing visibility into equipment health, including predictions of performance 
+            degradation and/or equipment failure.
+            </p>
+        </li>
+    </ul>
+    <div class="collapse-content">
+        <h4>Solution</h4>
+        <p>To achieve the desired on-demand approach for optimizing the maintenance schedule, a multi fault 
+            simultaneous Prognostics system will be created. This Prognostics framework will consist of the 
+            following: Anomaly detection capturing abnormal operation, allowing experts to define and discover more 
+            faults. Fault Classification to detect specific faults and their time to failure. Remaining Useful Life 
+            Estimators to provide time to failure counters for each type of fault.
+        </p>
+        <div class="case-img">
+            <img src="{{site.baseurl}}/assets/img/case4/2.png" class="img-fluid" alt="">
+        </div>
+        <div>
+            <h4>Approach</h4>
+            <p>
+                Our approach is to create two main solutions that can be hosted on cloud or on premise.
+                <ul>
+                    <li>
+                        <p>
+                            Maintenance Optimization Framework that allows the client to correctly forecast future failure events.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Full prognostics framework that allows Client SME identify new failures and detect early degradation.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <h4>Maintenance Optimization</h4>
+        <div class="case-img">
+            <img src="{{site.baseurl}}/assets/img/case4/3.png"  width="500" height="400" alt="">
+        </div>
+        <p>
+            Framework for optimal operational duration. To provide optimal maintenance scheduling, we will generate 
+            time-to-failure algorithms, also known as Remaining Useful Life (RUL) estimations. The output of RUL estimations 
+            will then be overlain with the equipment run hour forecasting algorithms. By overlaying plant forecast run hours
+            with time-to-failure counters, maintenance scheduling can be optimized. This will properly place the future 
+            time window when outages are more likely needed. In addition to building and designing prognostics algorithms. 
+            The run hours forecast algorithm uses statistical techniques including ARIMA (Auto Regressive Integrated Moving Average) 
+        </p>
+        <div class="case-img">
+            <img src="{{site.baseurl}}/assets/img/case4/4.png" class="img-fluid" alt="">
+        </div>
+        <h4>Prognostics Framework</h4>
+        <p>To provide optimal maintenance scheduling, we will generate time-to-failure algorithms, also known as Remaining 
+            Useful Life (RUL) estimations. Our goal is to leverage Remaining Useful Life estimation (RUL) models for each 
+            fault type identified within the target list of pumps. RUL estimation will serve as an “odometer” for 
+            maintenance scheduling. To estimate RUL with variable operating conditions (e.g. BHA mud motors, Turbines, pumps, 
+            Wind Turbine blades, and gearboxes). This approach relies on a Deep Learning technique called Long Short Term Memory (LSTM) Autoencoders.
+        </p><div class="case-img">
+            <img src="{{site.baseurl}}/assets/img/case4/prog_frame.png" class="img-fluid" alt="">
+        </div>
+        <p>In addition to estimating RUL, we would build a semi-supervised early degradation detection algorithm 
+            using Deep Learning based Autoencoders and One Class Classification algorithms. This approach will 
+            make the Prognostics system more complete. Early detection algorithm will help identify early onset 
+            of system faults and therefore harden the time to failure estimation. This early detection process will 
+            also allow identifying and adding more faults to the system in the future as the usefulness of the platform 
+            is expanded.
+        </p>
+        <div class="case-img">
+            <img src="{{site.baseurl}}/assets/img/case4/5.png" class="img-fluid" alt="">
+        </div>
+        <div class="demo">
+            <h3>Demo</h3>
+            <div class="col-12 bg-white ifr">
+                <iframe id="plot" src="{{site.baseurl}}/assets/demo_figs/train_fig.html"></iframe>
+            </div>
+            <div class="col-sm-12 options d-flex justify-content-center">
+                <a id="opt-button-1" class="button" role="button" aria-pressed="true">Degradation Library</a>
+                <a id="opt-button-2" class="button" role="button" aria-pressed="true">New Instance</a>
+            </div>
+        </div>
+        <h3>Conclusion</h3>
+        <p>
+            Here at BKO services, we use your operations data along with some of the state-of-the-art machine learning techniques
+            to transform your organization from periodic maintenance strategy to on-demand maintenance strategy and help save Millions of dollars annually.
+        </p>
+    </div>
+    <div class="read-more-less">
+        <a>Read More</a>
+    </div>
+</div>

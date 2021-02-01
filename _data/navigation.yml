@@ -1,0 +1,27 @@
+#Please use the main menu items under the "text"
+
+- text: Home
+  url: /
+- text: About
+  url: /pages/about
+- text: Services
+  url: /pages/services
+- text: RMAAS
+  url: /pages/rmaas
+- text: Case Studies
+  url: /
+  submenu:
+  - text: Digitizing Pre-Sales for Small Scale LNG Plants
+    url: /pages/case1
+  - text: Hydrocarbon Prospecting with Machine Learning
+    url: /pages/case2
+  - text: Optimizing Merchant Power Generation for Deregulated Power Markets
+    url: /pages/case3
+  - text: Optimizing Equipment Maintenance Scheduling Through AI for Machinery Integrity
+    url: /pages/case4
+- text: Contact
+  url: /pages/contact
+- text: Resources
+  url: /pages/resources
+- text: Careers
+  url: /pages/careers

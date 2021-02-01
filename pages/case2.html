@@ -1,0 +1,136 @@
+---
+layout: page
+title: Hydrocarbon Prospecting with Machine Learning
+---
+
+<section class="about-area pb-0 pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 mb-40">
+                <div class="section-title">
+                    <h2>Challenge</h2>
+                </div>
+                <div class="about-content">
+                    <p style="font-size:18px;">Our Client, an Oil &Gas E&P company, wanted to maximize their development investments in their unconventional onshore basins. This meant improving their capabilities for hydrocarbon potential across any basin they have interest in.</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 mb-20 md-margin">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 mb-20">
+                        <div class="about-img">
+                            <img src="{{site.baseurl}}/assets/img/case2/1.jpg" width="500" height="300" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-info pt-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-left">
+                <div class="about-info-text">
+                    <h2>Solution</h2>
+                    <p>BKO Services provided a predictive model for hydrocarbon potential. This was intended to serve 3 principal purposes: </p>
+		    <p>- quantify any interaction between the reservoir and completions</p>
+	   	    <p>- provide probabilistic guidance to optimize new completions</p>
+		    <p>- estimate productivity away from known production, with optimal completions design showing P10, P50 and P90 scenarios</p>
+		    <p>To achieve those goals, BKO applied Machine Learning and public data augmentation to deliver a map of expected reservoir performance per formation. The solution also included up to 20 P10, P50, P90 completion designs for each formation.</p>
+                    <div class="info-img">
+                        <img src="{{site.baseurl}}/assets/img/case2/2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-info pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="about-info-text">
+                    <h2>Approach</h2>
+                    <p>To help deliver this solution to our client we followed a workflow that relied on best practices.</p>
+		    <br>
+		    <h2>Data Exploration:</h2>
+		    <p>Begin by carefully exploring the data, We used series of visualization techniques to understand data ranges, variable relationships, and potentially problematic data. </p>
+                    <div class="info-img">
+                        <img src="{{site.baseurl}}/assets/img/case2/3.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-info pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="about-info-text">
+                    <h2>Data Cleansing</h2>
+                    <p>Production Preprocessing: For a variety of reasons, not all data is meaningful. Armed with the understanding in step 1 (data exploration), we identified the highest quality data needed for the analysis. We also Computed an economic BOE = Oil + 1.1*Gas / 20, Accumulated volumes and “days online” and Interpolated data to a consistent “Cum Oil At 365 Days”</p>
+                    <div class="info-img">
+                        <img src="{{site.baseurl}}/assets/img/case2/4.png" class="img-fluid" alt="">
+			<img src="{{site.baseurl}}/assets/img/case2/5.png" class="img-fluid" alt="">
+                    </div>
+		    <p>We then proceeded to augment the dataset to improve the predictive power of our models</p>
+                    <div class="info-img">
+                        <img src="{{site.baseurl}}/assets/img/case2/6.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-info pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="about-info-text">
+                    <h2>Predictive Modeling</h2>
+                    <p>Holdout: As part of the modeling work, we performed a Holdout Process. One can think of ML as an automatic hypothesis generator. To get some confidence that the model can predict production at a new location, we “hide” some data and try and predict. We then test the hypotheses 10s, 100s of times and look at prediction performance.</p>
+                    <div class="info-img">
+                        <img src="{{site.baseurl}}/assets/img/case2/7.png" class="img-fluid" alt="">
+                    </div>
+		    <p>Model evaluation on holdout:</p>
+                    <div class="info-img">
+                        <img src="{{site.baseurl}}/assets/img/case2/8.png" class="img-fluid" alt="">
+                    </div>
+		    <p>Scenario testing: Our machine learning algorithms produced maps based on P10, P50 and P90 completions designs. A suite of possible completions parameters was then ran to highlight what completions may be most effective in different areas. </p>
+                    <div class="info-img">
+                        <img src="{{site.baseurl}}/assets/img/case2/9.png" class="img-fluid" alt="">
+                    </div>
+		    <div class="col-12 text-left">
+                        <p>This gave the client the ability to interrogate the algorithm and ask questions like: </p>
+                        <p>- If completions were held constant, what would my expected production be?</p>
+                        <p>- If I pumped a 10% larger job?</p>
+                        <p>- What uplift should I expect?</p>
+                        <p>- Is the uplift the same everywhere?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-info pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="about-info-text">
+                    <h2>Conclusion</h2>
+                    <p>To help deliver this solution to our client we followed a workflow that relied on best practices.</p>
+		    <br>
+		    <h2>Data Exploration:</h2>
+		    <p>BKO Services developed a predictive model for hydrocarbon potential across the client’s Basin. The model relied on client’s subsurface, engineering, and well performance data. This enabled the client to reliably iterate over well economics and optimize well completions, therefore improving the development commercial valuation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
